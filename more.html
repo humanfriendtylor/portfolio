@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>James's Portfolio</title>
+
+    <title>More About James</title>
+
     <!-- Bootstrap 5 CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-      <!-- Page Background -->
+
+    <!-- Page Background -->
     <style>
       body {
         background:
@@ -24,9 +27,10 @@
       }
     </style>
   </head>
+
   <body>
-   
-      <!-- Shared navigation loads here -->
+
+    <!-- Shared navigation loads here -->
     <div id="nav-placeholder"></div>
 
     <!-- Main Page Content -->
@@ -87,8 +91,9 @@
 
           </div>
         </div>
-   
-           <!-- Education and Goals Card -->
+
+
+        <!-- Education and Goals Card -->
         <div class="col-12 col-md-6">
 
           <div
@@ -132,8 +137,9 @@
         </div>
 
       </div>
-   
-        <!-- Learning Approach Card -->
+
+
+      <!-- Learning Approach Card -->
       <div class="row justify-content-center mt-4">
 
         <div class="col-12 col-md-10">
@@ -171,32 +177,119 @@
 
       </div>
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    <!-- 1. The Single Landing Zone for your jQuery injection -->
-    <div id="nav-placeholder"></div>
 
-    <!-- 3. jQuery CDN: Must be loaded before the custom script below -->
+      <!-- Beyond the Classroom Card -->
+      <div class="row justify-content-center mt-4">
+
+        <div class="col-12 col-md-10">
+
+          <div
+            class="card shadow-sm text-white"
+            style="
+              background:
+                linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.84)),
+                url('images/learning.png');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+
+            <div class="card-body p-4">
+
+              <h2 class="card-title h4 text-center mb-3">
+                Beyond the Classroom
+              </h2>
+
+              <p class="card-text mb-0">
+                Outside of my coursework, I spend time building personal projects,
+                learning web development, exploring cybersecurity, and improving my
+                understanding of how software and computer systems work. I want this
+                portfolio to grow with me as I gain more experience and complete
+                more projects.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Profile Links -->
+      <div class="text-center mt-5">
+
+        <h2 class="h5 text-white mb-3">
+          Connect With Me
+        </h2>
+
+        <div class="d-flex gap-2 justify-content-center flex-wrap">
+
+          <a
+            href="https://github.com/moltedlocust"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jtylerwillingham1480"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="resume.pdf"
+            class="btn btn-outline-light"
+          >
+            Resume
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Page Navigation -->
+      <div class="d-flex gap-2 justify-content-center mt-4 mb-5">
+
+        <a
+          href="index.html"
+          class="btn btn-outline-light"
+        >
+          Home
+        </a>
+
+        <a
+          href="projects.html"
+          class="btn btn-outline-light"
+        >
+          Projects
+        </a>
+
+      </div>
+
+    </main>
+
+
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- 4. Bootstrap 5 JS Bundle -->
+    <!-- Bootstrap 5 JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- 5. jQuery Injection Script -->
+    <!-- Load shared navigation -->
     <script>
       $(document).ready(function () {
         $("#nav-placeholder").load("navbar.html");
       });
     </script>
+
   </body>
 </html>
