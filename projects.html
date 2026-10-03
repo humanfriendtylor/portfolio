@@ -3,34 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>James's Portfolio</title>
+
+    <title>James's Projects</title>
+
     <!-- Bootstrap 5 CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Simple page background -->
+    <style>
+      body {
+        background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+        min-height: 100vh;
+      }
+    </style>
   </head>
+
   <body>
-  
-    <!-- 1. The Single Landing Zone for your jQuery injection -->
+
+    <!-- Shared navigation loads here -->
     <div id="nav-placeholder"></div>
-<main class="container my-5">
-<div class="text-center mb-5">
-  <h1>Projects</h1>
-  <p class="text-muted">Projects I'm currenly building and technologies i'm learning.</p>
-</div>
-</main>
-    <!-- 3. jQuery CDN: Must be loaded before the custom script below -->
+
+
+    <!-- Main Projects Content -->
+    <main class="container my-5">
+
+      <!-- Page Heading -->
+      <div class="text-center mb-5">
+        <h1 class="h2">Projects</h1>
+
+        <p class="text-muted">
+          Projects I am currently building and skills I am developing.
+        </p>
+      </div>
+
+
+      <!-- Project Cards -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Student Assignment Tracker Project -->
+        <div class="col-12 col-md-6">
+
+          <div class="card h-100 shadow-sm">
+
+            <!-- Project Image -->
+            <img
+              src="images/assignment-tracker.png"
+              class="card-img-top"
+              alt="Screenshot of the student assignment tracker project"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title h4">
+                Student Assignment Tracker
+              </h2>
+
+              <span class="badge bg-warning text-dark mb-3">
+                In Development
+              </span>
+
+              <p class="card-text">
+                A SaaS application I am building to help students organize
+                their classes, assignments, and deadlines in one place.
+              </p>
+
+              <h3 class="h6 mt-4">
+                Technologies and Skills
+              </h3>
+
+              <div class="mb-3">
+                <span class="badge bg-secondary">Python</span>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">SQL</span>
+                <span class="badge bg-secondary">Git</span>
+              </div>
+
+              <ul>
+                <li>
+                  Planning features for organizing classes, assignments,
+                  and deadlines.
+                </li>
+                <li>
+                  Learning how front-end, back-end, and database systems
+                  work together.
+                </li>
+                <li>
+                  Designing the project around a problem I experience
+                  as a college student.
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- Project Links -->
+            <div class="card-footer bg-transparent border-0">
+
+              <a
+                href="https://github.com/moltedlocust"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+    </main>
+
+
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- 4. Bootstrap 5 JS Bundle -->
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- 5. jQuery Injection Script -->
+    <!-- Load shared navigation -->
     <script>
       $(document).ready(function () {
         $("#nav-placeholder").load("navbar.html");
       });
     </script>
+
   </body>
 </html>
