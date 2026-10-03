@@ -15,64 +15,59 @@
     <!-- Simple page background -->
     <style>
       body {
-        background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+          url("images/background.png");
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
         min-height: 100vh;
       }
     </style>
   </head>
 
   <body>
-
     <!-- Shared navigation loads here -->
     <div id="nav-placeholder"></div>
 
     <!-- Main Projects Content -->
     <main class="container my-5">
-
       <!-- Page Heading -->
       <div class="text-center mb-5">
-        <h1 class="h2">Projects</h1>
+        <h1 class="h2 text-white">Projects</h1>
 
-        <p class="text-muted">
+        <p class="text-white">
           Projects I am currently building and skills I am developing.
         </p>
       </div>
 
       <!-- Project Cards -->
       <div class="row g-4 justify-content-center">
-
         <!-- Student Assignment Tracker Project -->
         <div class="col-12 col-md-6">
-
           <div
             class="card h-100 shadow-sm text-white"
             style="
               background:
                 linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.78)),
-                url('images/student_tracker.png');
+                url(&quot;images/student_tracker.png&quot;);
               background-size: cover;
               background-position: center;
             "
           >
-
             <div class="card-body">
+              <h2 class="card-title h4">Student Assignment Tracker</h2>
 
-              <h2 class="card-title h4">
-                Student Assignment Tracker
-              </h2>
-
-              <span class="badge bg-secondary mb-3">
-                In Development
-              </span>
+              <span class="badge bg-secondary mb-3"> In Development </span>
 
               <p class="card-text">
-                A SaaS application I am building to help students organize
-                their classes, assignments, and deadlines in one place.
+                A SaaS application I am building to help students organize their
+                classes, assignments, and deadlines in one place.
               </p>
 
-              <h3 class="h6 mt-4">
-                Technologies and Skills
-              </h3>
+              <h3 class="h6 mt-4">Technologies and Skills</h3>
 
               <div class="mb-3">
                 <span class="badge bg-secondary">Python</span>
@@ -85,26 +80,24 @@
 
               <ul>
                 <li>
-                  Planning features for organizing classes, assignments,
-                  and deadlines.
+                  Planning features for organizing classes, assignments, and
+                  deadlines.
                 </li>
 
                 <li>
-                  Learning how front-end, back-end, and database systems
-                  work together.
+                  Learning how front-end, back-end, and database systems work
+                  together.
                 </li>
 
                 <li>
-                  Designing the project around a problem I experience
-                  as a college student.
+                  Designing the project around a problem I experience as a
+                  college student.
                 </li>
               </ul>
-
             </div>
 
             <!-- Project Links -->
             <div class="card-footer bg-transparent border-0">
-
               <a
                 href="https://github.com/moltedlocust"
                 class="btn btn-outline-light"
@@ -113,45 +106,34 @@
               >
                 GitHub
               </a>
-
             </div>
-
           </div>
         </div>
 
         <!-- The Odin Project -->
         <div class="col-12 col-md-6">
-
           <div
             class="card h-100 shadow-sm text-white"
             style="
               background:
                 linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.78)),
-                url('images/odin.png');
+                url(&quot;images/odin.png&quot;);
               background-size: cover;
               background-position: center;
             "
           >
-
             <div class="card-body">
+              <h2 class="card-title h4">The Odin Project</h2>
 
-              <h2 class="card-title h4">
-                The Odin Project
-              </h2>
-
-              <span class="badge bg-secondary mb-3">
-                In Progress
-              </span>
+              <span class="badge bg-secondary mb-3"> In Progress </span>
 
               <p class="card-text">
                 I am working through The Odin Project to build practical
-                full-stack web development skills alongside my Computer
-                Science coursework.
+                full-stack web development skills alongside my Computer Science
+                coursework.
               </p>
 
-              <h3 class="h6 mt-4">
-                Currently Learning
-              </h3>
+              <h3 class="h6 mt-4">Currently Learning</h3>
 
               <div class="mb-3">
                 <span class="badge bg-secondary">HTML</span>
@@ -163,28 +145,18 @@
               </div>
 
               <ul>
-                <li>
-                  Building stronger HTML and CSS fundamentals.
-                </li>
+                <li>Building stronger HTML and CSS fundamentals.</li>
 
-                <li>
-                  Learning JavaScript and programming concepts.
-                </li>
+                <li>Learning JavaScript and programming concepts.</li>
 
-                <li>
-                  Practicing Git, GitHub, and command-line workflows.
-                </li>
+                <li>Practicing Git, GitHub, and command-line workflows.</li>
 
-                <li>
-                  Working toward larger full-stack development projects.
-                </li>
+                <li>Working toward larger full-stack development projects.</li>
               </ul>
-
             </div>
 
             <!-- Project Links -->
             <div class="card-footer bg-transparent border-0">
-
               <a
                 href="https://github.com/moltedlocust/theodinproject"
                 class="btn btn-outline-light me-2"
@@ -202,24 +174,15 @@
               >
                 The Odin Project
               </a>
-
             </div>
-
           </div>
         </div>
-
       </div>
 
       <!-- Back to Home Button -->
       <div class="text-center mt-5">
-        <a
-          href="index.html"
-          class="btn btn-outline-secondary"
-        >
-          Back to Home
-        </a>
+        <a href="index.html" class="btn btn-outline-light"> Back to Home </a>
       </div>
-
     </main>
 
     <!-- jQuery CDN -->
@@ -234,6 +197,5 @@
         $("#nav-placeholder").load("navbar.html");
       });
     </script>
-
   </body>
 </html>
